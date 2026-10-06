@@ -152,3 +152,26 @@ UI
 - Complex business logic should be separated into services.
 - Firebase Security Rules handle authorization and data protection.
 - Keep the architecture simple and avoid unnecessary abstraction.
+
+features/
+└── expenses/
+    ├── data/
+    │   ├── expense_repository.dart
+    │   └── expense_repository_impl.dart
+    │
+    ├── models/
+    │   └── expense.dart
+    │
+    └── presentation/
+        ├── cubit/
+        │   ├── expense_cubit.dart
+        │   └── expense_state.dart
+        │
+        ├── pages/
+        │   ├── expenses_page.dart
+        │   ├── add_expense_page.dart
+        │   └── expense_detail_page.dart
+        │
+        └── widgets/
+            ├── expense_card.dart
+            └── category_bottom_sheet.dart
